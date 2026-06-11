@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://www.schemastore.org/github-workflow.json": "file:///Users/saravanesh/My_Work_Files/Castus_Technologies/GITHUB_Actions/Day4/.github/workflows/01-filter-type-demo.yaml"
+    }
+}

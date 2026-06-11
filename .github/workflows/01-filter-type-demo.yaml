@@ -1,0 +1,31 @@
+name: 01- Practice workflow Trigger
+on:
+  push:
+    branchs:
+      - "develop"
+      - "feature/*"
+    paths:
+      - "app/**"
+      - "docker/**"
+      - ".github/workflows/**"
+
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      = closed
+      - ready_for_review
+
+    branches:
+      - "main"
+
+jobs:
+  validation-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print workflow context
+        run: |
+          echo "Workflow triggered successfully"
+          echo "Event type $GITHUB_EVENT_NAME"
+          echo "Branch - $GITHUB_REF_NAME""
