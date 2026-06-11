@@ -14,7 +14,7 @@ on:
       - opened
       - synchronize
       - reopened
-      = closed
+      - closed
       - ready_for_review
 
     branches:
