@@ -1,7 +1,7 @@
 name: 01- Practice workflow Trigger
 on:
   push:
-    branchs:
+    branches:
       - "develop"
       - "feature/*"
     paths:
@@ -28,4 +28,4 @@ jobs:
         run: |
           echo "Workflow triggered successfully"
           echo "Event type $GITHUB_EVENT_NAME"
-          echo "Branch - $GITHUB_REF_NAME""
+          echo "Branch - $GITHUB_REF_NAME"
